@@ -1,0 +1,78 @@
+Created heap of size 10
+Current number of items in heap is: 0
+Heap is empty, can't access top!
+
+BEGINNING TESTS FOR PART 1A
+*** TESTING INSERT ***
+adding item1,  with number 88 to heap
+Top of heap is: text_item{"item1",88}
+adding item2,  with number 96 to heap
+Top of heap is: text_item{"item2",96}
+adding item3,  with number 64 to heap
+Top of heap is: text_item{"item2",96}
+adding item4,  with number 33 to heap
+Top of heap is: text_item{"item2",96}
+adding item5,  with number 98 to heap
+Top of heap is: text_item{"item5",98}
+
+*** TESTING INSERT WITHOUT ANY SWAP_UPS NEEDED ***
+adding item0,  with number 3 to heap1
+Top of heap is: text_item{"item0",3}
+adding item1,  with number 2 to heap1
+Top of heap is: text_item{"item0",3}
+adding item2,  with number 1 to heap1
+Top of heap is: text_item{"item0",3}
+adding item3,  with number 0 to heap1
+Top of heap is: text_item{"item0",3}
+
+*** TESTING INSERT WITH MULTIPLE SWAP_UPS ***
+adding item0,  with number 1 to heap2
+Top of heap is: text_item{"item0",1}
+adding item1,  with number 2 to heap2
+Top of heap is: text_item{"item1",2}
+adding item2,  with number 3 to heap2
+Top of heap is: text_item{"item2",3}
+
+BEGINNING TESTS FOR PART 1B
+*** TESTING DELETEMAX ***
+Item returned from heap delete: text_item{"item5",98}
+Top of heap is now: text_item{"item2",96}
+
+*** TESTING DELETEMAX (SWAP_DOWN WITH LEFT CHILD) ***
+Item returned from heap1 delete: text_item{"item0",3}
+Top of heap1 is now: text_item{"item1",2}
+
+*** TESTING DELETEMAX (SWAP_DOWN WITH RIGHT CHILD) ***
+Item returned from heap2 delete: text_item{"item0",3}
+Top of heap2 is now: text_item{"item2",2}
+
+*** TESTING DELETEMAX ON AN EMPTY HEAP ***
+Heap is empty, can't access top!
+
+BEGINNING TESTS FOR PART 2
+Found: difficult in the input file 39 time(s).
+Found: of in the input file 19652 time(s).
+Found: is in the input file 6134 time(s).
+Found: aaaa in the input file 0 time(s).
+
+BEGINNING TESTS FOR PART 3
+*** Top 5 most frequent words: ***
+text_item{"the",40506}
+text_item{"of",19652}
+text_item{"and",14786}
+text_item{"a",14315}
+text_item{"to",13761}
+
+*** Top 5 most frequent words with at least 12 letters ***
+text_item{"fauchelevent",291}
+text_item{"gillenormand",233}
+text_item{"nevertheless",147}
+text_item{"mademoiselle",100}
+text_item{"montparnasse",88}
+
+*** Top 5 most frequent words that begin with x ***
+text_item{"xviii",30}
+text_item{"x",24}
+text_item{"xvi",20}
+text_item{"xiv",19}
+text_item{"xv",17}
